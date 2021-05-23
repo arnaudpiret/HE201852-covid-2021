@@ -8,4 +8,4 @@ END
 
 
 /******************************************/
-CREATE SERVICE "initialiser" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call proc_villeList();
+CREATE SERVICE "villeList" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call proc_villeList();
