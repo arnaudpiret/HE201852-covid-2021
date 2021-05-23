@@ -9,4 +9,4 @@ select list('<tr><td>'|| tbmembres.membresId ||'</td><td>'||DBA.tbmembres.prenom
 
 END
 
-CREATE SERVICE "personnesList" TYPE 'JSON' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call proc_personnesList()
+CREATE SERVICE "personnesList" TYPE 'RAW' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call proc_personnesList()
