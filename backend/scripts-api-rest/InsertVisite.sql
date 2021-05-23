@@ -6,4 +6,4 @@ BEGIN
 END
 
 
-CREATE SERVICE "InsertVisite' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call proc_InsertVisite(CP = :CP,mID = :mID,visitdate = :visitdate)
+CREATE SERVICE "InsertVisite' TYPE 'RAW' AUTHORIZATION OFF USER "DBA" URL ON METHODS 'GET' AS call proc_InsertVisite(CP = :CP,mID = :mID,visitdate = :visitdate)
